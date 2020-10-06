@@ -17,7 +17,8 @@ class Home extends React.Component {
         return (
             <div className="container">
                 <div className="layer">
-                <h1 className="name">Cédrik Loustaunau</h1>
+                <h3 className="name">Cédrik Loustaunau</h3>
+                <h1 className="pseudo">DreksWorld</h1>
                 <h2 className="job">Photographe</h2>
                 <div className="navHome">
                     <Nav />
