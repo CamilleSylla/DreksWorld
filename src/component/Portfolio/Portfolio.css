@@ -5,83 +5,26 @@
     background: black;
     font-family: 'Spartan', sans-serif;
 }
-.pGrid {
+.img-grid{
+    margin: 20px auto;
     display: grid;
-    margin-top: 100px;
-    padding-bottom: 100px;
-    grid-template-columns: repeat(9, 1fr);
-    gap: 20px;
-    grid-auto-rows: minmax(200px, auto);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
 }
-.menu {
-    grid-column: 1;
-    grid-row: 1;
-    color: white;
-    text-align: left;
-    margin-left: 30%;
+
+.img-wrap{
+    overflow: hidden;
+    height: 0;
+    padding: 50% 0;
+    
+    position: relative;
+    opacity: 0.8;
 }
-.One {
-    grid-column: 3 / span 2;
-    grid-row: 1 / span 3;
-    background-image: url('../../assets/portfolio/frankie-cordoba-3_YdCa__q8o-unsplash.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 1s ease-out;
-}
-.One:hover{
-    background-position: left;
-    cursor: pointer;
-}
-.Two {
-    grid-column: 5 / span 3 ;
-    grid-row: 1;
-    background-image: url('../../assets/portfolio/emma-paillex-FX8g0RWCjqw-unsplash.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 1s ease-out;
-}
-.Two:hover{
-    background-position: top;
-    cursor: pointer;
-}
-.Three {
-    grid-column: 5 ;
-    grid-row: 2 / span 2;
-    background-image: url('../../assets/portfolio/yessy-suhardiman-qsXKj6ErB7w-unsplash.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 1s ease-out;
-}
-.Three:hover{
-    background-position: left;
-    cursor: pointer;
-}
-.Four {
-    grid-column: 6 / span 2 ;
-    grid-row: 2 / span 4;
-    background-image: url('../../assets/portfolio/arash-payam--qtnZj7zB2U-unsplash.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 1s ease-out;
-}
-.Four:hover{
-    background-position: right;
-    cursor: pointer;
-}
-.Five {
-    grid-column: 3 / span 3;
-    grid-row: 4 / span 2;
-    background-image: url('../../assets/portfolio/pawel-janiak-DbT12JPMLq8-unsplash.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: all 1s ease-out;
-}
-.Five:hover{
-    background-position: left;
-    cursor: pointer;
+.img-wrap img{
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 150%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
