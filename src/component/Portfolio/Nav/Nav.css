@@ -1,0 +1,39 @@
+.pNav {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width:100%;
+    border-bottom: 1px solid white;
+}
+.home {
+    grid-column: 5;
+    transition: all 1s ease-out;
+}
+.home:hover {
+    color: #3DADF2;
+    cursor: pointer;
+}
+.portfolio {
+    grid-column: 6;
+    transition: all 1s ease-out;
+}
+.portfolio:hover {
+    color: #3DADF2;
+    cursor: pointer;
+}
+.propos {
+    grid-column: 7;
+    transition: all 1s ease-out;
+}
+.propos:hover {
+    color: #3DADF2;
+    cursor: pointer;
+}
+.contact {
+    grid-column: 8;
+    transition: all 1s ease-out;
+}
+.contact:hover {
+    color: #3DADF2;
+    cursor: pointer;
+}
+
